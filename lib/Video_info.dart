@@ -4,6 +4,7 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'colors.dart' as color;
 
@@ -15,10 +16,11 @@ class Video_info extends StatefulWidget {
 }
 
 class _Video_infoState extends State<Video_info> {
-
-List info = [];
+  List info = [];
   _initData() {
-    DefaultAssetBundle.of(context).loadString("json/Video_info.json").then((value) {
+    DefaultAssetBundle.of(context)
+        .loadString("json/Video_info.json")
+        .then((value) {
       info = json.decode(value);
     });
   }
@@ -43,8 +45,14 @@ List info = [];
                 children: [
                   Row(
                     children: [
-                      Icon(Icons.arrow_back_ios,
-                          size: 20, color: color.AppColor.secondPageIconColor),
+                      InkWell(
+                        onTap: () {
+                          Get.back();
+                        },
+                        child: Icon(Icons.arrow_back_ios,
+                            size: 20,
+                            color: color.AppColor.secondPageIconColor),
+                      ),
                       Expanded(child: Container()),
                       Icon(Icons.info_outline,
                           size: 20, color: color.AppColor.secondPageIconColor),
@@ -152,39 +160,46 @@ List info = [];
             ),
             Expanded(
                 child: Container(
-                decoration: BoxDecoration(
+              decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(70)
-                ),
+                borderRadius: BorderRadius.only(topRight: Radius.circular(70)),
               ),
               child: Column(
                 children: [
-                  SizedBox(height: 30,),
+                  SizedBox(
+                    height: 30,
+                  ),
                   Row(
                     children: [
-                      SizedBox(width: 30,),
-                      Text("Circuit 1: Legs Toning",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: color.AppColor.circuitsColor
-                      ),),
+                      SizedBox(
+                        width: 30,
+                      ),
+                      Text(
+                        "Circuit 1: Legs Toning",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: color.AppColor.circuitsColor),
+                      ),
                       Expanded(child: Container()),
                       Row(
                         children: [
-                          Icon(Icons.loop,size:30,color:color.AppColor.loopColor),
-                          Text("3 sets",
-                          style: TextStyle(fontSize: 15,
-                          color: color.AppColor.setsColor
-                          ),
+                          Icon(Icons.loop,
+                              size: 30, color: color.AppColor.loopColor),
+                          Text(
+                            "3 sets",
+                            style: TextStyle(
+                                fontSize: 15, color: color.AppColor.setsColor),
                           )
                         ],
                       ),
-                      SizedBox(width: 20,),
+                      SizedBox(
+                        width: 20,
+                      ),
                     ],
                   )
-              ],),
+                ],
+              ),
             ))
           ],
         ),

@@ -48,15 +48,10 @@ class _homePageState extends State<homePage> {
                       fontWeight: FontWeight.w700),
                 ),
                 Expanded(child: Container()),
-                InkWell(
-                  onTap: () {
-                    Get.to(() => Video_info());
-                  },
-                  child: Icon(
-                    Icons.arrow_back_ios,
-                    size: 20,
-                    color: color.AppColor.homePageIcons,
-                  ),
+                Icon(
+                  Icons.arrow_back_ios,
+                  size: 20,
+                  color: color.AppColor.homePageIcons,
                 ),
                 SizedBox(
                   width: 10,
@@ -97,10 +92,15 @@ class _homePageState extends State<homePage> {
                 SizedBox(
                   width: 5,
                 ),
-                Icon(
-                  Icons.arrow_forward,
-                  size: 20,
-                  color: color.AppColor.homePagePlanColor,
+                InkWell(
+                  onTap: () {
+                    Get.to(() => Video_info());
+                  },
+                  child: Icon(
+                    Icons.arrow_forward,
+                    size: 20,
+                    color: color.AppColor.homePagePlanColor,
+                  ),
                 )
               ],
             ),
