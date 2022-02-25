@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE6EF60927C78F1600B09E7F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6EF60827C78F1600B09E7F /* Tests_iOS.swift */; };
+		BE6EF60B27C78F1600B09E7F /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6EF60A27C78F1600B09E7F /* Tests_iOSLaunchTests.swift */; };
+		BE6EF61527C78F1600B09E7F /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6EF61427C78F1600B09E7F /* Tests_macOS.swift */; };
+		BE6EF61727C78F1600B09E7F /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6EF61627C78F1600B09E7F /* Tests_macOSLaunchTests.swift */; };
+		BE6EF61827C78F1600B09E7F /* jakdjs_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6EF5F027C78F1200B09E7F /* jakdjs_App.swift */; };
+		BE6EF61927C78F1600B09E7F /* jakdjs_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6EF5F027C78F1200B09E7F /* jakdjs_App.swift */; };
+		BE6EF61A27C78F1600B09E7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6EF5F127C78F1200B09E7F /* ContentView.swift */; };
+		BE6EF61B27C78F1600B09E7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6EF5F127C78F1200B09E7F /* ContentView.swift */; };
+		BE6EF61C27C78F1600B09E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6EF5F227C78F1600B09E7F /* Assets.xcassets */; };
+		BE6EF61D27C78F1600B09E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6EF5F227C78F1600B09E7F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE6EF60527C78F1600B09E7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6EF5EB27C78F1200B09E7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE6EF5F627C78F1600B09E7F;
+			remoteInfo = "jakdjs' (iOS)";
+		};
+		BE6EF61127C78F1600B09E7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE6EF5EB27C78F1200B09E7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE6EF5FC27C78F1600B09E7F;
+			remoteInfo = "jakdjs' (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE6EF5F027C78F1200B09E7F /* jakdjs_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jakdjs_App.swift; sourceTree = "<group>"; };
+		BE6EF5F127C78F1200B09E7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE6EF5F227C78F1600B09E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE6EF5F727C78F1600B09E7F /* jakdjs'.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jakdjs'.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6EF5FD27C78F1600B09E7F /* jakdjs'.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jakdjs'.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6EF5FF27C78F1600B09E7F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		BE6EF60427C78F1600B09E7F /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6EF60827C78F1600B09E7F /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		BE6EF60A27C78F1600B09E7F /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		BE6EF61027C78F1600B09E7F /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6EF61427C78F1600B09E7F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		BE6EF61627C78F1600B09E7F /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE6EF5F427C78F1600B09E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6EF5FA27C78F1600B09E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6EF60127C78F1600B09E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6EF60D27C78F1600B09E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE6EF5EA27C78F1200B09E7F = {
+			isa = PBXGroup;
+			children = (
+				BE6EF5EF27C78F1200B09E7F /* Shared */,
+				BE6EF5FE27C78F1600B09E7F /* macOS */,
+				BE6EF60727C78F1600B09E7F /* Tests iOS */,
+				BE6EF61327C78F1600B09E7F /* Tests macOS */,
+				BE6EF5F827C78F1600B09E7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE6EF5EF27C78F1200B09E7F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BE6EF5F027C78F1200B09E7F /* jakdjs_App.swift */,
+				BE6EF5F127C78F1200B09E7F /* ContentView.swift */,
+				BE6EF5F227C78F1600B09E7F /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BE6EF5F827C78F1600B09E7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE6EF5F727C78F1600B09E7F /* jakdjs'.app */,
+				BE6EF5FD27C78F1600B09E7F /* jakdjs'.app */,
+				BE6EF60427C78F1600B09E7F /* Tests iOS.xctest */,
+				BE6EF61027C78F1600B09E7F /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE6EF5FE27C78F1600B09E7F /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE6EF5FF27C78F1600B09E7F /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		BE6EF60727C78F1600B09E7F /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE6EF60827C78F1600B09E7F /* Tests_iOS.swift */,
+				BE6EF60A27C78F1600B09E7F /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		BE6EF61327C78F1600B09E7F /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE6EF61427C78F1600B09E7F /* Tests_macOS.swift */,
+				BE6EF61627C78F1600B09E7F /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE6EF5F627C78F1600B09E7F /* jakdjs' (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6EF62027C78F1600B09E7F /* Build configuration list for PBXNativeTarget "jakdjs' (iOS)" */;
+			buildPhases = (
+				BE6EF5F327C78F1600B09E7F /* Sources */,
+				BE6EF5F427C78F1600B09E7F /* Frameworks */,
+				BE6EF5F527C78F1600B09E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "jakdjs' (iOS)";
+			productName = "jakdjs' (iOS)";
+			productReference = BE6EF5F727C78F1600B09E7F /* jakdjs'.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE6EF5FC27C78F1600B09E7F /* jakdjs' (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6EF62327C78F1600B09E7F /* Build configuration list for PBXNativeTarget "jakdjs' (macOS)" */;
+			buildPhases = (
+				BE6EF5F927C78F1600B09E7F /* Sources */,
+				BE6EF5FA27C78F1600B09E7F /* Frameworks */,
+				BE6EF5FB27C78F1600B09E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "jakdjs' (macOS)";
+			productName = "jakdjs' (macOS)";
+			productReference = BE6EF5FD27C78F1600B09E7F /* jakdjs'.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE6EF60327C78F1600B09E7F /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6EF62627C78F1600B09E7F /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				BE6EF60027C78F1600B09E7F /* Sources */,
+				BE6EF60127C78F1600B09E7F /* Frameworks */,
+				BE6EF60227C78F1600B09E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE6EF60627C78F1600B09E7F /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = BE6EF60427C78F1600B09E7F /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BE6EF60F27C78F1600B09E7F /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6EF62927C78F1600B09E7F /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				BE6EF60C27C78F1600B09E7F /* Sources */,
+				BE6EF60D27C78F1600B09E7F /* Frameworks */,
+				BE6EF60E27C78F1600B09E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE6EF61227C78F1600B09E7F /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = BE6EF61027C78F1600B09E7F /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE6EF5EB27C78F1200B09E7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					BE6EF5F627C78F1600B09E7F = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					BE6EF5FC27C78F1600B09E7F = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					BE6EF60327C78F1600B09E7F = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = BE6EF5F627C78F1600B09E7F;
+					};
+					BE6EF60F27C78F1600B09E7F = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = BE6EF5FC27C78F1600B09E7F;
+					};
+				};
+			};
+			buildConfigurationList = BE6EF5EE27C78F1200B09E7F /* Build configuration list for PBXProject "jakdjs'" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE6EF5EA27C78F1200B09E7F;
+			productRefGroup = BE6EF5F827C78F1600B09E7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE6EF5F627C78F1600B09E7F /* jakdjs' (iOS) */,
+				BE6EF5FC27C78F1600B09E7F /* jakdjs' (macOS) */,
+				BE6EF60327C78F1600B09E7F /* Tests iOS */,
+				BE6EF60F27C78F1600B09E7F /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE6EF5F527C78F1600B09E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6EF61C27C78F1600B09E7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6EF5FB27C78F1600B09E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6EF61D27C78F1600B09E7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6EF60227C78F1600B09E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6EF60E27C78F1600B09E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE6EF5F327C78F1600B09E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6EF61A27C78F1600B09E7F /* ContentView.swift in Sources */,
+				BE6EF61827C78F1600B09E7F /* jakdjs_App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6EF5F927C78F1600B09E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6EF61B27C78F1600B09E7F /* ContentView.swift in Sources */,
+				BE6EF61927C78F1600B09E7F /* jakdjs_App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6EF60027C78F1600B09E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6EF60B27C78F1600B09E7F /* Tests_iOSLaunchTests.swift in Sources */,
+				BE6EF60927C78F1600B09E7F /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6EF60C27C78F1600B09E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6EF61727C78F1600B09E7F /* Tests_macOSLaunchTests.swift in Sources */,
+				BE6EF61527C78F1600B09E7F /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE6EF60627C78F1600B09E7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE6EF5F627C78F1600B09E7F /* jakdjs' (iOS) */;
+			targetProxy = BE6EF60527C78F1600B09E7F /* PBXContainerItemProxy */;
+		};
+		BE6EF61227C78F1600B09E7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE6EF5FC27C78F1600B09E7F /* jakdjs' (macOS) */;
+			targetProxy = BE6EF61127C78F1600B09E7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE6EF61E27C78F1600B09E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE6EF61F27C78F1600B09E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BE6EF62127C78F1600B09E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sdas.jakdjs-";
+				PRODUCT_NAME = "jakdjs'";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE6EF62227C78F1600B09E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sdas.jakdjs-";
+				PRODUCT_NAME = "jakdjs'";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE6EF62427C78F1600B09E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sdas.jakdjs-";
+				PRODUCT_NAME = "jakdjs'";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE6EF62527C78F1600B09E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sdas.jakdjs-";
+				PRODUCT_NAME = "jakdjs'";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BE6EF62727C78F1600B09E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sdas.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "jakdjs' (iOS)";
+			};
+			name = Debug;
+		};
+		BE6EF62827C78F1600B09E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sdas.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "jakdjs' (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE6EF62A27C78F1600B09E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sdas.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "jakdjs' (macOS)";
+			};
+			name = Debug;
+		};
+		BE6EF62B27C78F1600B09E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sdas.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "jakdjs' (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE6EF5EE27C78F1200B09E7F /* Build configuration list for PBXProject "jakdjs'" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6EF61E27C78F1600B09E7F /* Debug */,
+				BE6EF61F27C78F1600B09E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6EF62027C78F1600B09E7F /* Build configuration list for PBXNativeTarget "jakdjs' (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6EF62127C78F1600B09E7F /* Debug */,
+				BE6EF62227C78F1600B09E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6EF62327C78F1600B09E7F /* Build configuration list for PBXNativeTarget "jakdjs' (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6EF62427C78F1600B09E7F /* Debug */,
+				BE6EF62527C78F1600B09E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6EF62627C78F1600B09E7F /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6EF62727C78F1600B09E7F /* Debug */,
+				BE6EF62827C78F1600B09E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6EF62927C78F1600B09E7F /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6EF62A27C78F1600B09E7F /* Debug */,
+				BE6EF62B27C78F1600B09E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE6EF5EB27C78F1200B09E7F /* Project object */;
+}

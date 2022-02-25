@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'dart:convert';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +15,14 @@ class Video_info extends StatefulWidget {
 }
 
 class _Video_infoState extends State<Video_info> {
+
+List info = [];
+  _initData() {
+    DefaultAssetBundle.of(context).loadString("json/Video_info.json").then((value) {
+      info = json.decode(value);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -153,12 +163,25 @@ class _Video_infoState extends State<Video_info> {
                   SizedBox(height: 30,),
                   Row(
                     children: [
+                      SizedBox(width: 30,),
                       Text("Circuit 1: Legs Toning",
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         color: color.AppColor.circuitsColor
-                      ),)
+                      ),),
+                      Expanded(child: Container()),
+                      Row(
+                        children: [
+                          Icon(Icons.loop,size:30,color:color.AppColor.loopColor),
+                          Text("3 sets",
+                          style: TextStyle(fontSize: 15,
+                          color: color.AppColor.setsColor
+                          ),
+                          )
+                        ],
+                      ),
+                      SizedBox(width: 20,),
                     ],
                   )
               ],),

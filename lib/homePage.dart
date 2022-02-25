@@ -4,6 +4,8 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:shop/Video_info.dart';
 
 import 'colors.dart' as color;
 
@@ -33,7 +35,7 @@ class _homePageState extends State<homePage> {
     return Scaffold(
       backgroundColor: color.AppColor.homePageBackground,
       body: Container(
-        padding: const EdgeInsets.only(top: 70, left: 30, right:30 ),
+        padding: const EdgeInsets.only(top: 70, left: 30, right: 30),
         child: Column(
           children: [
             Row(
@@ -46,10 +48,15 @@ class _homePageState extends State<homePage> {
                       fontWeight: FontWeight.w700),
                 ),
                 Expanded(child: Container()),
-                Icon(
-                  Icons.arrow_back_ios,
-                  size: 20,
-                  color: color.AppColor.homePageIcons,
+                InkWell(
+                  onTap: () {
+                    Get.to(() => Video_info());
+                  },
+                  child: Icon(
+                    Icons.arrow_back_ios,
+                    size: 20,
+                    color: color.AppColor.homePageIcons,
+                  ),
                 ),
                 SizedBox(
                   width: 10,
@@ -284,94 +291,96 @@ class _homePageState extends State<homePage> {
             ),
             Expanded(
                 child: OverflowBox(
-                  maxWidth: MediaQuery.of(context).size.width,
-                  child: MediaQuery.removePadding(
-                    removeTop: true,
-                    context: context,
-                    child: ListView.builder(
-                        itemCount: (info.length.toDouble() / 2).toInt(), // list 2
-                        itemBuilder: (_, i) {
-                          int a = 2*i; // 0
-                          int b = 2*i +1; // 1 
-                          return Row(
-                            children: [
-                              Container(
-                                width: (MediaQuery.of(context).size.width-90)/2,
-                                height: 170,
-                                margin: EdgeInsets.only(left: 30,bottom: 15,top: 15),
-                                padding: EdgeInsets.only(bottom: 5),
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(15),
-                                  image: DecorationImage(
-                                      image: AssetImage(info[a]['img'])),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        blurRadius: 3,
-                                        offset: Offset(5, 5),
-                                        color: color.AppColor.gradientSecond
-                                            .withOpacity(0.1)),
-                                    BoxShadow(
-                                        blurRadius: 3,
-                                        offset: Offset(-5, -5),
-                                        color: color.AppColor.gradientSecond
-                                            .withOpacity(0.1)),
-                                  ],
-                                ),
-                                child: Center(
-                                  child: Align(
-                                    alignment: Alignment.bottomCenter,
-                                    child: Text(
-                                      info[a]['title'],
-                                      style: TextStyle(
-                                        fontSize: 25,
-                                        color: color.AppColor.homePageDetail,
-                                      ),
-                                    ),
+              maxWidth: MediaQuery.of(context).size.width,
+              child: MediaQuery.removePadding(
+                removeTop: true,
+                context: context,
+                child: ListView.builder(
+                    itemCount: (info.length.toDouble() / 2).toInt(), // list 2
+                    itemBuilder: (_, i) {
+                      int a = 2 * i; // 0
+                      int b = 2 * i + 1; // 1
+                      return Row(
+                        children: [
+                          Container(
+                            width: (MediaQuery.of(context).size.width - 90) / 2,
+                            height: 170,
+                            margin:
+                                EdgeInsets.only(left: 30, bottom: 15, top: 15),
+                            padding: EdgeInsets.only(bottom: 5),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              image: DecorationImage(
+                                  image: AssetImage(info[a]['img'])),
+                              boxShadow: [
+                                BoxShadow(
+                                    blurRadius: 3,
+                                    offset: Offset(5, 5),
+                                    color: color.AppColor.gradientSecond
+                                        .withOpacity(0.1)),
+                                BoxShadow(
+                                    blurRadius: 3,
+                                    offset: Offset(-5, -5),
+                                    color: color.AppColor.gradientSecond
+                                        .withOpacity(0.1)),
+                              ],
+                            ),
+                            child: Center(
+                              child: Align(
+                                alignment: Alignment.bottomCenter,
+                                child: Text(
+                                  info[a]['title'],
+                                  style: TextStyle(
+                                    fontSize: 25,
+                                    color: color.AppColor.homePageDetail,
                                   ),
                                 ),
                               ),
-                              Container(
-                                width: (MediaQuery.of(context).size.width-90)/2,
-                                margin: EdgeInsets.only(left: 30,bottom: 15,top: 15),
-                                height: 170,
-                                padding: EdgeInsets.only(bottom: 5),
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(15),
-                                  image: DecorationImage(
-                                      image: AssetImage(info[b]['img'])),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        blurRadius: 3,
-                                        offset: Offset(5, 5),
-                                        color: color.AppColor.gradientSecond
-                                            .withOpacity(0.1)),
-                                    BoxShadow(
-                                        blurRadius: 3,
-                                        offset: Offset(-5, -5),
-                                        color: color.AppColor.gradientSecond
-                                            .withOpacity(0.1)),
-                                  ],
-                                ),
-                                child: Center(
-                                  child: Align(
-                                    alignment: Alignment.bottomCenter,
-                                    child: Text(
-                                      info[b]['title'],
-                                      style: TextStyle(
-                                        fontSize: 25,
-                                        color: color.AppColor.homePageDetail,
-                                      ),
-                                    ),
+                            ),
+                          ),
+                          Container(
+                            width: (MediaQuery.of(context).size.width - 90) / 2,
+                            margin:
+                                EdgeInsets.only(left: 30, bottom: 15, top: 15),
+                            height: 170,
+                            padding: EdgeInsets.only(bottom: 5),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                              image: DecorationImage(
+                                  image: AssetImage(info[b]['img'])),
+                              boxShadow: [
+                                BoxShadow(
+                                    blurRadius: 3,
+                                    offset: Offset(5, 5),
+                                    color: color.AppColor.gradientSecond
+                                        .withOpacity(0.1)),
+                                BoxShadow(
+                                    blurRadius: 3,
+                                    offset: Offset(-5, -5),
+                                    color: color.AppColor.gradientSecond
+                                        .withOpacity(0.1)),
+                              ],
+                            ),
+                            child: Center(
+                              child: Align(
+                                alignment: Alignment.bottomCenter,
+                                child: Text(
+                                  info[b]['title'],
+                                  style: TextStyle(
+                                    fontSize: 25,
+                                    color: color.AppColor.homePageDetail,
                                   ),
                                 ),
                               ),
-                            ],
-                          );
-                        }),
-                  ),
-                ))
+                            ),
+                          ),
+                        ],
+                      );
+                    }),
+              ),
+            ))
           ],
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shop/Video_info.dart';
+import 'package:get/get.dart';
+import 'package:shop/homePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +12,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowMaterialGrid: false,
       title: 'shop',
      theme: ThemeData(
        primarySwatch: Colors.blue,
      ),
-      home: Video_info(),
+      home: homePage(),
     );
   }
 }
